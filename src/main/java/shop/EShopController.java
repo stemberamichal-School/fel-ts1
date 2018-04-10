@@ -19,7 +19,14 @@ public class EShopController {
     public EShopController() {
     }
 
-    
+
+    public static Storage getStorage() {
+        return storage;
+    }
+
+    public static PurchasesArchive getArchive() {
+        return archive;
+    }
 
     public static void purchaseShoppingCart(ShoppingCart cart, String customerName, String customerAddress) throws NoItemInStorage {
         if (cart.getCartItems().isEmpty()) {
@@ -44,7 +51,6 @@ public class EShopController {
             orders = new ArrayList();
         }
     }
-
 
 
 
