@@ -37,7 +37,7 @@ public class ShoppingCartTest {
 
         assertEquals(20, cart.getTotalPrice());
 //        verify(mockedItem, times(2)).getPrice();
-        verify(mockedItem, times(1)).getPrice();
+        verify(mockedItem, times(2)).getPrice();
         verify(mockedItem, never()).setPrice(anyFloat());
     }
 }

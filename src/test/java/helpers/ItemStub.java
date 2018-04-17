@@ -52,4 +52,9 @@ public class ItemStub extends Item implements ItemInterface {
     public void setCategory(String category) {
 
     }
+
+    @Override
+    public int getLoyaltyPoints() {
+        return 0;
+    }
 }

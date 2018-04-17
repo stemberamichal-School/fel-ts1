@@ -79,5 +79,7 @@ public abstract class Item implements ItemInterface {
         }
         return false;
     }
+
+    public abstract int getLoyaltyPoints();
 }
 

@@ -62,7 +62,12 @@ public class DiscountedItem extends Item {
         }
         return false;
     }
-    
+
+    @Override
+    public int getLoyaltyPoints() {
+        return 0;
+    }
+
     public int getDiscount() {
         return discount;
     }
