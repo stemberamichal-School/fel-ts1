@@ -38,9 +38,6 @@ public class PurchasesArchive {
         return 0;
     }
     
-
-    
-    
     public void putOrderToPurchasesArchive(Order order) {
         orderArchive.add(order);
         ArrayList<Item> orderItems = order.getItems();
