@@ -10,7 +10,9 @@ import java.util.ArrayList;
 
 public class ShoppingCart {
 
-    
+    public static final int POINTS_FOR_DISCOUNT = 15;
+    public static final int DISCOUNT = 200;
+
     ArrayList<Item> items;
 
     public ShoppingCart(ArrayList<Item> items) {
@@ -62,21 +64,16 @@ public class ShoppingCart {
      * @return total price with discount
      */
     public int getTotalPrice() {
-        int total = 0;
-        for(Item i: items) {
-            total += i.getPrice();
-        }
-//        for (int i = items.size() - 1; i >= 0; i--) {
-//            Item temp_item = (Item) items.get(i);
-//            total += temp_item.getPrice();
-//        }
-//        return total;
-
         return (int) items.stream().mapToDouble(Item::getPrice).sum();
     }
     
-    
-    
+    public int getDiscount(Customer customer) {
+        return 0;
+    }
+
+    public int getOriginalPrice() {
+        return 0;
+    }
     
     
     
